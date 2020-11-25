@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SignupActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:id="@+id/logo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Note App"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_below="@id/logo_text"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:drawablePadding="10dp"
+        android:hint="Enter Name"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_name"
+        android:textColorHint="@color/white"
+        android:padding="10dp"
+        android:drawableStart="@drawable/ic_user"
+        android:background="@drawable/edit_text_bg"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_text" />
+
+    <TextView
+        android:id="@+id/tv_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Number"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_below="@id/et_name"/>
+
+    <EditText
+        android:id="@+id/et_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/tv_mobile"
+        android:textColor="@color/white"
+        android:background="@drawable/edit_text_bg"
+        android:ems="10"
+        android:hint="Enter Mobile Number"
+        android:textColorHint="@color/white"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_phone"/>
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_below="@id/et_mobile"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_text_bg"
+        android:ems="10"
+        android:padding="10dp"
+        android:layout_below="@+id/tv_email"
+        android:hint="Enter Email"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="10dp"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_below="@+id/et_email"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_text_bg"
+        android:ems="10"
+        android:padding="10dp"
+        android:layout_below="@+id/tv_password"
+        android:hint="Enter Password"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_bg"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_below="@id/et_password"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:text="Already have an Account? Login"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/signup_btn"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
+</ScrollView>
